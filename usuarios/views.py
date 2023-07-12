@@ -4,4 +4,4 @@ from rolepermissions.decorators import has_permission_decorator
 
 @has_permission_decorator('cadastrar_vendedor')
 def cadastrar_vendedor(request):
-    return HttpResponse('Teste')
+    return render(request, 'cadastrar_vendedor.html')
